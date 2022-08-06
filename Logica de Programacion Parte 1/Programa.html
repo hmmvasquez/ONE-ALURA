@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA</h1>
+
+<script>
+	var anho = 2025;
+	var saltoLinea = "<br><br><br>";
+
+	document.write("Juan tiene: " + (anho - 2000) + " años");
+	document.write(saltoLinea);
+	document.write("Pedro tiene: " + (anho - 1995) + " años");
+
+	anho = 2030;
+
+	document.write(saltoLinea);
+	document.write("Carlos tiene: " + (anho - 2005) + " años");
+
+	var edadJimena = 10;
+	var edadPaola = 25;
+	var edadLaura = 15;
+
+	var nombre1 = "Jimena";
+	var nombre2 = "Paola";
+	var nombre3 = "Laura";
+
+	promedio = (edadJimena + edadPaola + edadLaura)/3;
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+	}
+
+	saltarLinea();
+
+	imprimir("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio));
+</script>
