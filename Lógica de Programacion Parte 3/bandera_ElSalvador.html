@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var pizarra = document.querySelector("canvas");
+	var pincel = pizarra.getContext("2d");
+
+	pincel.fillStyle = "blue";
+	pincel.fillRect(0,0,600,135); 
+
+	pincel.fillStyle = "white"; 
+	pincel.fillRect(0,135,600,130); 
+
+	pincel.fillStyle = "blue"; 
+	pincel.fillRect(0,265,600,135); 
+
+	pincel.fillStyle = "yellow"; 
+	pincel.beginPath();
+	pincel.arc(300,200,60,0,2*3.14);
+	pincel.fill();
+
+	pincel.fillStyle = "white"; 
+	pincel.beginPath();
+	pincel.arc(300,200,50,0,2*3.14);
+	pincel.fill();
+
+	pincel.strokeStyle = "green";
+	pincel.lineWidth = 5;
+	pincel.beginPath();
+	pincel.arc(300,200,45,-0.25*Math.PI,1.25*Math.PI);
+	pincel.stroke();
+
+	pincel.fillStyle = "yellow"; //propiedad o caracteristica
+	pincel.beginPath();
+	pincel.moveTo(300,150);
+	pincel.lineTo(275,225);
+	pincel.lineTo(325,225);
+	pincel.fill();
+
+	pincel.fillStyle = "red"; //propiedad o caracteristica
+	pincel.beginPath();
+	pincel.arc(300,200,10,0,2*3.14);
+	pincel.fill();
+</script>
